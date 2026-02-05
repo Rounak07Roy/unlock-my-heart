@@ -6,15 +6,14 @@ import QuestionModal from "./components/QuestionModal";
 import LoveLetter from "./components/LoveLetter";
 import SparkleCursor from "./components/SparkleCursor";
 import { questions } from "./data/questions";
-import { Theme, themes } from "./Theme";
-import ThemeSwitcher from "./components/ThemeSwitcher";
+
 
 export default function App() {
   const [started, setStarted] = useState(false);
   const [current, setCurrent] = useState(0);
   const [showQuestion, setShowQuestion] = useState(false);
   const [answers, setAnswers] = useState<string[]>([]);
-  const [theme, setTheme] = useState<Theme>("purple");
+//   const [theme, setTheme] = useState<Theme>("purple");
 
 
   // 💌 Final screen: Love Letter
